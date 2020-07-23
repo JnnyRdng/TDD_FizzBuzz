@@ -26,3 +26,7 @@ class TestFizzbuzz(unittest.TestCase):
     def test_mult_of_5(self):
         result = fizzbuzz(25)
         self.assertEqual("Buzz", result)
+
+    def test_with_strings(self):
+        result = fizzbuzz("3")
+        self.assertEqual("Fizz", result)
